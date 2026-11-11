@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data wilayah - SIAK Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Buka menu"
+    />
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div><strong>SIAK Desa</strong><small>Kependudukan</small></div>
+        </div>
+        <nav>
+          <a href="index.html">Dashboard</a>
+          <a href="penduduk.html">Data penduduk</a>
+          <a href="keluarga.html">Data keluarga (KK)</a>
+          <a href="kelahiran.html">Kelahiran</a>
+          <a href="kematian.html">Kematian</a>
+          <a href="pindah.html">Pindah / datang</a>
+          <a href="wilayah.html" class="active" aria-current="page"
+            >Data wilayah</a
+          >
+          <a href="surat.html">Surat</a>
+          <a href="laporan.html">Laporan</a>
+          <a href="pengguna.html">Pengguna</a>
+        </nav>
+      </aside>
+      <label for="menu-toggle" class="overlay"></label>
+      <div class="main">
+        <header class="topbar">
+          <label for="menu-toggle" class="burger" aria-label="Menu"
+            ><span></span><span></span><span></span
+          ></label>
+          <input
+            type="search"
+            placeholder="Cari NIK atau nama"
+            aria-label="Cari penduduk"
+          />
+          <div class="user">
+            <span class="avatar">AD</span
+            ><span class="user-name">Admin desa</span>
+          </div>
+        </header>
+        <main class="content">
+          <h1>Data wilayah</h1>
+          <p class="page-sub">Pembagian wilayah administratif desa.</p>
+          <section class="stats">
+            <div class="stat"><span>Dusun</span><strong>3</strong></div>
+            <div class="stat"><span>RW</span><strong>6</strong></div>
+            <div class="stat"><span>RT</span><strong>24</strong></div>
+            <div class="stat"><span>Total KK</span><strong>1.215</strong></div>
+          </section>
+          <section class="card">
+            <div class="card-head"><h2>Daftar RW</h2></div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>RW</th>
+                    <th>Jumlah RT</th>
+                    <th>Ketua RW</th>
+                    <th>Jumlah KK</th>
+                    <th>Jumlah penduduk</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="RW">RW 01</td>
+                    <td data-label="Jumlah RT">4</td>
+                    <td data-label="Ketua RW">Bapak Slamet</td>
+                    <td data-label="Jumlah KK">205</td>
+                    <td data-label="Jumlah penduduk">820</td>
+                  </tr>
+                  <tr>
+                    <td data-label="RW">RW 02</td>
+                    <td data-label="Jumlah RT">4</td>
+                    <td data-label="Ketua RW">Bapak Hendro</td>
+                    <td data-label="Jumlah KK">190</td>
+                    <td data-label="Jumlah penduduk">740</td>
+                  </tr>
+                  <tr>
+                    <td data-label="RW">RW 03</td>
+                    <td data-label="Jumlah RT">4</td>
+                    <td data-label="Ketua RW">Ibu Ratna</td>
+                    <td data-label="Jumlah KK">180</td>
+                    <td data-label="Jumlah penduduk">690</td>
+                  </tr>
+                  <tr>
+                    <td data-label="RW">RW 04</td>
+                    <td data-label="Jumlah RT">4</td>
+                    <td data-label="Ketua RW">Bapak Joko</td>
+                    <td data-label="Jumlah KK">165</td>
+                    <td data-label="Jumlah penduduk">610</td>
+                  </tr>
+                  <tr>
+                    <td data-label="RW">RW 05</td>
+                    <td data-label="Jumlah RT">4</td>
+                    <td data-label="Ketua RW">Bapak Darmawan</td>
+                    <td data-label="Jumlah KK">240</td>
+                    <td data-label="Jumlah penduduk">720</td>
+                  </tr>
+                  <tr>
+                    <td data-label="RW">RW 06</td>
+                    <td data-label="Jumlah RT">4</td>
+                    <td data-label="Ketua RW">Ibu Kartika</td>
+                    <td data-label="Jumlah KK">235</td>
+                    <td data-label="Jumlah penduduk">700</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

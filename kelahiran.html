@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kelahiran - SIAK Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Buka menu"
+    />
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div><strong>SIAK Desa</strong><small>Kependudukan</small></div>
+        </div>
+        <nav>
+          <a href="index.html">Dashboard</a>
+          <a href="penduduk.html">Data penduduk</a>
+          <a href="keluarga.html">Data keluarga (KK)</a>
+          <a href="kelahiran.html" class="active" aria-current="page"
+            >Kelahiran</a
+          >
+          <a href="kematian.html">Kematian</a>
+          <a href="pindah.html">Pindah / datang</a>
+          <a href="wilayah.html">Data wilayah</a>
+          <a href="surat.html">Surat</a>
+          <a href="laporan.html">Laporan</a>
+          <a href="pengguna.html">Pengguna</a>
+        </nav>
+      </aside>
+      <label for="menu-toggle" class="overlay"></label>
+      <div class="main">
+        <header class="topbar">
+          <label for="menu-toggle" class="burger" aria-label="Menu"
+            ><span></span><span></span><span></span
+          ></label>
+          <input
+            type="search"
+            placeholder="Cari NIK atau nama"
+            aria-label="Cari penduduk"
+          />
+          <div class="user">
+            <span class="avatar">AD</span
+            ><span class="user-name">Admin desa</span>
+          </div>
+        </header>
+        <main class="content">
+          <h1>Kelahiran</h1>
+          <p class="page-sub">Pencatatan peristiwa kelahiran.</p>
+          <section class="card">
+            <div class="card-head"><h2>Data kelahiran</h2></div>
+            <div class="toolbar">
+              <input
+                type="search"
+                placeholder="Cari nama bayi atau orang tua"
+                aria-label="Cari nama bayi atau orang tua"
+              /><select aria-label="Filter">
+                <option>Semua bulan</option>
+                <option>Oktober 2026</option>
+                <option>September 2026</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No. akta</th>
+                    <th>Nama bayi</th>
+                    <th>Jenis kelamin</th>
+                    <th>Tanggal lahir</th>
+                    <th>Nama ayah</th>
+                    <th>Nama ibu</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="No. akta">AK-2026-0101</td>
+                    <td data-label="Nama bayi">Alya Putri</td>
+                    <td data-label="Jenis kelamin">Perempuan</td>
+                    <td data-label="Tanggal lahir">02-10-2026</td>
+                    <td data-label="Nama ayah">Budi Santoso</td>
+                    <td data-label="Nama ibu">Siti Aminah</td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. akta">AK-2026-0102</td>
+                    <td data-label="Nama bayi">Fajar Ramadhan</td>
+                    <td data-label="Jenis kelamin">Laki-laki</td>
+                    <td data-label="Tanggal lahir">08-10-2026</td>
+                    <td data-label="Nama ayah">Rudi Hartono</td>
+                    <td data-label="Nama ibu">Rina Wulandari</td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. akta">AK-2026-0103</td>
+                    <td data-label="Nama bayi">Kinan Azzahra</td>
+                    <td data-label="Jenis kelamin">Perempuan</td>
+                    <td data-label="Tanggal lahir">15-10-2026</td>
+                    <td data-label="Nama ayah">Agus Setiawan</td>
+                    <td data-label="Nama ibu">Maya Sari</td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. akta">AK-2026-0104</td>
+                    <td data-label="Nama bayi">Bima Pratama</td>
+                    <td data-label="Jenis kelamin">Laki-laki</td>
+                    <td data-label="Tanggal lahir">21-10-2026</td>
+                    <td data-label="Nama ayah">Andi Pratama</td>
+                    <td data-label="Nama ibu">Dewi Lestari</td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="card">
+            <h2>Catat kelahiran</h2>
+            <form class="form" action="#">
+              <label
+                >Nama bayi<input type="text" placeholder="Nama lengkap"
+              /></label>
+              <label>Tanggal lahir<input type="date" placeholder="" /></label>
+              <label
+                >Jenis kelamin<select>
+                  <option>Laki-laki</option>
+                  <option>Perempuan</option>
+                </select></label
+              >
+              <label
+                >Tempat lahir<input
+                  type="text"
+                  placeholder="Rumah sakit atau bidan"
+              /></label>
+              <label
+                >Nama ayah<input type="text" placeholder="Sesuai KTP"
+              /></label>
+              <label
+                >Nama ibu<input type="text" placeholder="Sesuai KTP"
+              /></label>
+              <div class="form-actions wide">
+                <button type="submit" class="btn">Simpan data</button
+                ><button type="reset" class="btn ghost">Batal</button>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

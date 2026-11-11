@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Surat - SIAK Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Buka menu"
+    />
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div><strong>SIAK Desa</strong><small>Kependudukan</small></div>
+        </div>
+        <nav>
+          <a href="index.html">Dashboard</a>
+          <a href="penduduk.html">Data penduduk</a>
+          <a href="keluarga.html">Data keluarga (KK)</a>
+          <a href="kelahiran.html">Kelahiran</a>
+          <a href="kematian.html">Kematian</a>
+          <a href="pindah.html">Pindah / datang</a>
+          <a href="wilayah.html">Data wilayah</a>
+          <a href="surat.html" class="active" aria-current="page">Surat</a>
+          <a href="laporan.html">Laporan</a>
+          <a href="pengguna.html">Pengguna</a>
+        </nav>
+      </aside>
+      <label for="menu-toggle" class="overlay"></label>
+      <div class="main">
+        <header class="topbar">
+          <label for="menu-toggle" class="burger" aria-label="Menu"
+            ><span></span><span></span><span></span
+          ></label>
+          <input
+            type="search"
+            placeholder="Cari NIK atau nama"
+            aria-label="Cari penduduk"
+          />
+          <div class="user">
+            <span class="avatar">AD</span
+            ><span class="user-name">Admin desa</span>
+          </div>
+        </header>
+        <main class="content">
+          <h1>Surat</h1>
+          <p class="page-sub">Pengajuan dan pencetakan surat keterangan.</p>
+          <section class="card">
+            <div class="card-head"><h2>Daftar surat</h2></div>
+            <div class="toolbar">
+              <input
+                type="search"
+                placeholder="Cari nomor surat atau pemohon"
+                aria-label="Cari nomor surat atau pemohon"
+              /><select aria-label="Filter">
+                <option>Semua jenis</option>
+                <option>Domisili</option>
+                <option>Tidak mampu</option>
+                <option>Usaha</option>
+                <option>Pengantar</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No. surat</th>
+                    <th>Jenis</th>
+                    <th>Pemohon</th>
+                    <th>Tanggal</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="No. surat">001/SK/X/2026</td>
+                    <td data-label="Jenis">Domisili</td>
+                    <td data-label="Pemohon">Budi Santoso</td>
+                    <td data-label="Tanggal">02-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Selesai</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. surat">002/SK/X/2026</td>
+                    <td data-label="Jenis">Tidak mampu</td>
+                    <td data-label="Pemohon">Siti Aminah</td>
+                    <td data-label="Tanggal">05-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Selesai</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. surat">003/SK/X/2026</td>
+                    <td data-label="Jenis">Usaha</td>
+                    <td data-label="Pemohon">Agus Setiawan</td>
+                    <td data-label="Tanggal">09-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Selesai</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. surat">004/SK/X/2026</td>
+                    <td data-label="Jenis">Pengantar</td>
+                    <td data-label="Pemohon">Dewi Lestari</td>
+                    <td data-label="Tanggal">14-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge warn">Diproses</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. surat">005/SK/X/2026</td>
+                    <td data-label="Jenis">Domisili</td>
+                    <td data-label="Pemohon">Maya Sari</td>
+                    <td data-label="Tanggal">20-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge warn">Diproses</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. surat">006/SK/X/2026</td>
+                    <td data-label="Jenis">Usaha</td>
+                    <td data-label="Pemohon">Rina Wulandari</td>
+                    <td data-label="Tanggal">24-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge info">Diajukan</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="card">
+            <h2>Buat surat</h2>
+            <form class="form" action="#">
+              <label
+                >Jenis surat<select>
+                  <option>Domisili</option>
+                  <option>Tidak mampu</option>
+                  <option>Usaha</option>
+                  <option>Pengantar</option>
+                </select></label
+              >
+              <label
+                >NIK pemohon<input type="text" placeholder="16 digit NIK"
+              /></label>
+              <label
+                >Keperluan<input type="text" placeholder="Untuk keperluan apa"
+              /></label>
+              <div class="form-actions wide">
+                <button type="submit" class="btn">Simpan data</button
+                ><button type="reset" class="btn ghost">Batal</button>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data keluarga (KK) - SIAK Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Buka menu"
+    />
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div><strong>SIAK Desa</strong><small>Kependudukan</small></div>
+        </div>
+        <nav>
+          <a href="index.html">Dashboard</a>
+          <a href="penduduk.html">Data penduduk</a>
+          <a href="keluarga.html" class="active" aria-current="page"
+            >Data keluarga (KK)</a
+          >
+          <a href="kelahiran.html">Kelahiran</a>
+          <a href="kematian.html">Kematian</a>
+          <a href="pindah.html">Pindah / datang</a>
+          <a href="wilayah.html">Data wilayah</a>
+          <a href="surat.html">Surat</a>
+          <a href="laporan.html">Laporan</a>
+          <a href="pengguna.html">Pengguna</a>
+        </nav>
+      </aside>
+      <label for="menu-toggle" class="overlay"></label>
+      <div class="main">
+        <header class="topbar">
+          <label for="menu-toggle" class="burger" aria-label="Menu"
+            ><span></span><span></span><span></span
+          ></label>
+          <input
+            type="search"
+            placeholder="Cari NIK atau nama"
+            aria-label="Cari penduduk"
+          />
+          <div class="user">
+            <span class="avatar">AD</span
+            ><span class="user-name">Admin desa</span>
+          </div>
+        </header>
+        <main class="content">
+          <h1>Data keluarga (KK)</h1>
+          <p class="page-sub">Daftar kartu keluarga dan anggotanya.</p>
+          <section class="card">
+            <div class="card-head">
+              <h2>Daftar KK</h2>
+              <a href="#" class="btn">Tambah KK</a>
+            </div>
+            <div class="toolbar">
+              <input
+                type="search"
+                placeholder="Cari nomor KK atau kepala keluarga"
+                aria-label="Cari nomor KK atau kepala keluarga"
+              /><select aria-label="Filter">
+                <option>Semua RT/RW</option>
+                <option>02/05</option>
+                <option>01/03</option>
+                <option>03/02</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No. KK</th>
+                    <th>Kepala keluarga</th>
+                    <th>Alamat</th>
+                    <th>Anggota</th>
+                    <th>RT/RW</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="No. KK">3171xxxx1001</td>
+                    <td data-label="Kepala keluarga">Budi Santoso</td>
+                    <td data-label="Alamat">Jl. Melati No. 12</td>
+                    <td data-label="Anggota">4</td>
+                    <td data-label="RT/RW">02/05</td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. KK">3171xxxx1002</td>
+                    <td data-label="Kepala keluarga">Andi Pratama</td>
+                    <td data-label="Alamat">Jl. Kenanga No. 7</td>
+                    <td data-label="Anggota">3</td>
+                    <td data-label="RT/RW">01/03</td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. KK">3171xxxx1003</td>
+                    <td data-label="Kepala keluarga">Dewi Lestari</td>
+                    <td data-label="Alamat">Jl. Mawar No. 21</td>
+                    <td data-label="Anggota">2</td>
+                    <td data-label="RT/RW">03/02</td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. KK">3171xxxx1004</td>
+                    <td data-label="Kepala keluarga">Agus Setiawan</td>
+                    <td data-label="Alamat">Jl. Anggrek No. 5</td>
+                    <td data-label="Anggota">5</td>
+                    <td data-label="RT/RW">04/01</td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="No. KK">3171xxxx1005</td>
+                    <td data-label="Kepala keluarga">Maya Sari</td>
+                    <td data-label="Alamat">Jl. Dahlia No. 18</td>
+                    <td data-label="Anggota">3</td>
+                    <td data-label="RT/RW">03/02</td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="pager">
+              <span>Menampilkan 5 dari 1.215 KK</span>
+              <div class="pages">
+                <a href="#" class="current">1</a><a href="#">2</a
+                ><a href="#">3</a>
+              </div>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card-head"><h2>Anggota KK 3171xxxx1001</h2></div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>NIK</th>
+                    <th>Nama</th>
+                    <th>Hubungan</th>
+                    <th>Jenis kelamin</th>
+                    <th>Pekerjaan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0001</td>
+                    <td data-label="Nama">Budi Santoso</td>
+                    <td data-label="Hubungan">Kepala keluarga</td>
+                    <td data-label="Jenis kelamin">Laki-laki</td>
+                    <td data-label="Pekerjaan">Karyawan swasta</td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0002</td>
+                    <td data-label="Nama">Siti Aminah</td>
+                    <td data-label="Hubungan">Istri</td>
+                    <td data-label="Jenis kelamin">Perempuan</td>
+                    <td data-label="Pekerjaan">Ibu rumah tangga</td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0011</td>
+                    <td data-label="Nama">Raka Santoso</td>
+                    <td data-label="Hubungan">Anak</td>
+                    <td data-label="Jenis kelamin">Laki-laki</td>
+                    <td data-label="Pekerjaan">Pelajar</td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0012</td>
+                    <td data-label="Nama">Nadia Santoso</td>
+                    <td data-label="Hubungan">Anak</td>
+                    <td data-label="Jenis kelamin">Perempuan</td>
+                    <td data-label="Pekerjaan">Pelajar</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

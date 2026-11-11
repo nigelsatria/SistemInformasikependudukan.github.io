@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pindah / datang - SIAK Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Buka menu"
+    />
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div><strong>SIAK Desa</strong><small>Kependudukan</small></div>
+        </div>
+        <nav>
+          <a href="index.html">Dashboard</a>
+          <a href="penduduk.html">Data penduduk</a>
+          <a href="keluarga.html">Data keluarga (KK)</a>
+          <a href="kelahiran.html">Kelahiran</a>
+          <a href="kematian.html">Kematian</a>
+          <a href="pindah.html" class="active" aria-current="page"
+            >Pindah / datang</a
+          >
+          <a href="wilayah.html">Data wilayah</a>
+          <a href="surat.html">Surat</a>
+          <a href="laporan.html">Laporan</a>
+          <a href="pengguna.html">Pengguna</a>
+        </nav>
+      </aside>
+      <label for="menu-toggle" class="overlay"></label>
+      <div class="main">
+        <header class="topbar">
+          <label for="menu-toggle" class="burger" aria-label="Menu"
+            ><span></span><span></span><span></span
+          ></label>
+          <input
+            type="search"
+            placeholder="Cari NIK atau nama"
+            aria-label="Cari penduduk"
+          />
+          <div class="user">
+            <span class="avatar">AD</span
+            ><span class="user-name">Admin desa</span>
+          </div>
+        </header>
+        <main class="content">
+          <h1>Pindah / datang</h1>
+          <p class="page-sub">
+            Mutasi penduduk yang pindah keluar atau datang ke desa.
+          </p>
+          <section class="card">
+            <div class="card-head"><h2>Data mutasi</h2></div>
+            <div class="toolbar">
+              <input
+                type="search"
+                placeholder="Cari nama penduduk"
+                aria-label="Cari nama penduduk"
+              /><select aria-label="Filter">
+                <option>Semua jenis</option>
+                <option>Pindah</option>
+                <option>Datang</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Jenis</th>
+                    <th>Nama</th>
+                    <th>Asal</th>
+                    <th>Tujuan</th>
+                    <th>Tanggal</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Jenis">
+                      <span class="badge info">Pindah</span>
+                    </td>
+                    <td data-label="Nama">Andi Pratama</td>
+                    <td data-label="Asal">Desa Sukamaju</td>
+                    <td data-label="Tujuan">Kota Bandung</td>
+                    <td data-label="Tanggal">03-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Selesai</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Jenis">
+                      <span class="badge ok">Datang</span>
+                    </td>
+                    <td data-label="Nama">Lina Marlina</td>
+                    <td data-label="Asal">Kota Bogor</td>
+                    <td data-label="Tujuan">Desa Sukamaju</td>
+                    <td data-label="Tanggal">06-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Selesai</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Jenis">
+                      <span class="badge ok">Datang</span>
+                    </td>
+                    <td data-label="Nama">Hendra Gunawan</td>
+                    <td data-label="Asal">Kota Depok</td>
+                    <td data-label="Tujuan">Desa Sukamaju</td>
+                    <td data-label="Tanggal">12-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge warn">Diproses</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Jenis">
+                      <span class="badge info">Pindah</span>
+                    </td>
+                    <td data-label="Nama">Yeni Rahmawati</td>
+                    <td data-label="Asal">Desa Sukamaju</td>
+                    <td data-label="Tujuan">Kota Bekasi</td>
+                    <td data-label="Tanggal">17-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge warn">Diproses</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Jenis">
+                      <span class="badge ok">Datang</span>
+                    </td>
+                    <td data-label="Nama">Taufik Hidayat</td>
+                    <td data-label="Asal">Kab. Tangerang</td>
+                    <td data-label="Tujuan">Desa Sukamaju</td>
+                    <td data-label="Tanggal">22-10-2026</td>
+                    <td data-label="Status">
+                      <span class="badge warn">Diproses</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

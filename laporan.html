@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laporan - SIAK Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Buka menu"
+    />
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div><strong>SIAK Desa</strong><small>Kependudukan</small></div>
+        </div>
+        <nav>
+          <a href="index.html">Dashboard</a>
+          <a href="penduduk.html">Data penduduk</a>
+          <a href="keluarga.html">Data keluarga (KK)</a>
+          <a href="kelahiran.html">Kelahiran</a>
+          <a href="kematian.html">Kematian</a>
+          <a href="pindah.html">Pindah / datang</a>
+          <a href="wilayah.html">Data wilayah</a>
+          <a href="surat.html">Surat</a>
+          <a href="laporan.html" class="active" aria-current="page">Laporan</a>
+          <a href="pengguna.html">Pengguna</a>
+        </nav>
+      </aside>
+      <label for="menu-toggle" class="overlay"></label>
+      <div class="main">
+        <header class="topbar">
+          <label for="menu-toggle" class="burger" aria-label="Menu"
+            ><span></span><span></span><span></span
+          ></label>
+          <input
+            type="search"
+            placeholder="Cari NIK atau nama"
+            aria-label="Cari penduduk"
+          />
+          <div class="user">
+            <span class="avatar">AD</span
+            ><span class="user-name">Admin desa</span>
+          </div>
+        </header>
+        <main class="content">
+          <h1>Laporan</h1>
+          <p class="page-sub">Rekap jumlah penduduk per wilayah.</p>
+          <section class="card">
+            <div class="card-head"><h2>Filter laporan</h2></div>
+            <form class="form" action="#">
+              <label
+                >Periode<select>
+                  <option>Oktober 2026</option>
+                  <option>September 2026</option>
+                  <option>Tahun 2026</option>
+                </select></label
+              ><label
+                >Wilayah<select>
+                  <option>Semua RW</option>
+                  <option>RW 01</option>
+                  <option>RW 02</option>
+                </select></label
+              >
+              <div class="form-actions wide">
+                <button type="submit" class="btn">Tampilkan</button
+                ><a href="#" class="btn ghost">Ekspor PDF</a
+                ><a href="#" class="btn ghost">Ekspor Excel</a>
+              </div>
+            </form>
+          </section>
+          <section class="card">
+            <div class="card-head"><h2>Jumlah penduduk per RW</h2></div>
+            <div class="bars">
+              <div class="bar-row">
+                <span>RW 01</span>
+                <div class="bar"><i style="width: 100%"></i></div>
+                <strong>820</strong>
+              </div>
+              <div class="bar-row">
+                <span>RW 02</span>
+                <div class="bar"><i style="width: 90%"></i></div>
+                <strong>740</strong>
+              </div>
+              <div class="bar-row">
+                <span>RW 03</span>
+                <div class="bar"><i style="width: 84%"></i></div>
+                <strong>690</strong>
+              </div>
+              <div class="bar-row">
+                <span>RW 04</span>
+                <div class="bar"><i style="width: 74%"></i></div>
+                <strong>610</strong>
+              </div>
+              <div class="bar-row">
+                <span>RW 05</span>
+                <div class="bar"><i style="width: 88%"></i></div>
+                <strong>720</strong>
+              </div>
+              <div class="bar-row">
+                <span>RW 06</span>
+                <div class="bar"><i style="width: 85%"></i></div>
+                <strong>700</strong>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

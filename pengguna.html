@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pengguna - SIAK Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Buka menu"
+    />
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div><strong>SIAK Desa</strong><small>Kependudukan</small></div>
+        </div>
+        <nav>
+          <a href="index.html">Dashboard</a>
+          <a href="penduduk.html">Data penduduk</a>
+          <a href="keluarga.html">Data keluarga (KK)</a>
+          <a href="kelahiran.html">Kelahiran</a>
+          <a href="kematian.html">Kematian</a>
+          <a href="pindah.html">Pindah / datang</a>
+          <a href="wilayah.html">Data wilayah</a>
+          <a href="surat.html">Surat</a>
+          <a href="laporan.html">Laporan</a>
+          <a href="pengguna.html" class="active" aria-current="page"
+            >Pengguna</a
+          >
+        </nav>
+      </aside>
+      <label for="menu-toggle" class="overlay"></label>
+      <div class="main">
+        <header class="topbar">
+          <label for="menu-toggle" class="burger" aria-label="Menu"
+            ><span></span><span></span><span></span
+          ></label>
+          <input
+            type="search"
+            placeholder="Cari NIK atau nama"
+            aria-label="Cari penduduk"
+          />
+          <div class="user">
+            <span class="avatar">AD</span
+            ><span class="user-name">Admin desa</span>
+          </div>
+        </header>
+        <main class="content">
+          <h1>Pengguna</h1>
+          <p class="page-sub">Akun petugas dan hak aksesnya.</p>
+          <section class="card">
+            <div class="card-head">
+              <h2>Daftar pengguna</h2>
+              <a href="#" class="btn">Tambah pengguna</a>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Username</th>
+                    <th>Nama petugas</th>
+                    <th>Role</th>
+                    <th>Terakhir masuk</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Username">admin</td>
+                    <td data-label="Nama petugas">Admin desa</td>
+                    <td data-label="Role">Admin</td>
+                    <td data-label="Terakhir masuk">25-10-2026 08:10</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Username">operator1</td>
+                    <td data-label="Nama petugas">Dian Kusuma</td>
+                    <td data-label="Role">Operator</td>
+                    <td data-label="Terakhir masuk">24-10-2026 15:42</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Username">kades</td>
+                    <td data-label="Nama petugas">Bambang Wijaya</td>
+                    <td data-label="Role">Kepala desa</td>
+                    <td data-label="Terakhir masuk">22-10-2026 09:30</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Username">operator2</td>
+                    <td data-label="Nama petugas">Fitri Handayani</td>
+                    <td data-label="Role">Operator</td>
+                    <td data-label="Terakhir masuk">10-10-2026 13:05</td>
+                    <td data-label="Status">
+                      <span class="badge bad">Nonaktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card-head"><h2>Log aktivitas</h2></div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Waktu</th>
+                    <th>Pengguna</th>
+                    <th>Aktivitas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Waktu">25-10-2026 08:12</td>
+                    <td data-label="Pengguna">admin</td>
+                    <td data-label="Aktivitas">Masuk ke sistem</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Waktu">24-10-2026 15:50</td>
+                    <td data-label="Pengguna">operator1</td>
+                    <td data-label="Aktivitas">Menambah data penduduk</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Waktu">24-10-2026 15:55</td>
+                    <td data-label="Pengguna">operator1</td>
+                    <td data-label="Aktivitas">Mencatat kelahiran</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Waktu">22-10-2026 09:35</td>
+                    <td data-label="Pengguna">kades</td>
+                    <td data-label="Aktivitas">
+                      Menyetujui surat 003/SK/X/2026
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

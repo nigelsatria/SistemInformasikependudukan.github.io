@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - SIAK Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Buka menu"
+    />
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div><strong>SIAK Desa</strong><small>Kependudukan</small></div>
+        </div>
+        <nav>
+          <a href="index.html" class="active" aria-current="page">Dashboard</a>
+          <a href="penduduk.html">Data penduduk</a>
+          <a href="keluarga.html">Data keluarga (KK)</a>
+          <a href="kelahiran.html">Kelahiran</a>
+          <a href="kematian.html">Kematian</a>
+          <a href="pindah.html">Pindah / datang</a>
+          <a href="wilayah.html">Data wilayah</a>
+          <a href="surat.html">Surat</a>
+          <a href="laporan.html">Laporan</a>
+          <a href="pengguna.html">Pengguna</a>
+        </nav>
+      </aside>
+      <label for="menu-toggle" class="overlay"></label>
+      <div class="main">
+        <header class="topbar">
+          <label for="menu-toggle" class="burger" aria-label="Menu"
+            ><span></span><span></span><span></span
+          ></label>
+          <input
+            type="search"
+            placeholder="Cari NIK atau nama"
+            aria-label="Cari penduduk"
+          />
+          <div class="user">
+            <span class="avatar">AD</span
+            ><span class="user-name">Admin desa</span>
+          </div>
+        </header>
+        <main class="content">
+          <h1>Dashboard</h1>
+          <p class="page-sub">Ringkasan data kependudukan desa.</p>
+          <section class="stats">
+            <div class="stat">
+              <span>Total penduduk</span><strong>4.280</strong>
+            </div>
+            <div class="stat">
+              <span>Kepala keluarga</span><strong>1.215</strong>
+            </div>
+            <div class="stat"><span>Laki-laki</span><strong>2.130</strong></div>
+            <div class="stat"><span>Perempuan</span><strong>2.150</strong></div>
+          </section>
+          <section class="card">
+            <div class="card-head"><h2>Peristiwa bulan ini</h2></div>
+            <section class="stats">
+              <div class="stat"><span>Kelahiran</span><strong>12</strong></div>
+              <div class="stat"><span>Kematian</span><strong>4</strong></div>
+              <div class="stat"><span>Pindah</span><strong>6</strong></div>
+              <div class="stat"><span>Datang</span><strong>9</strong></div>
+            </section>
+          </section>
+          <section class="card">
+            <div class="card-head">
+              <h2>Data penduduk terbaru</h2>
+              <a href="penduduk.html" class="btn ghost">Lihat semua</a>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>NIK</th>
+                    <th>Nama</th>
+                    <th>RT/RW</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0001</td>
+                    <td data-label="Nama">Budi Santoso</td>
+                    <td data-label="RT/RW">02/05</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0002</td>
+                    <td data-label="Nama">Siti Aminah</td>
+                    <td data-label="RT/RW">02/05</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0003</td>
+                    <td data-label="Nama">Andi Pratama</td>
+                    <td data-label="RT/RW">01/03</td>
+                    <td data-label="Status">
+                      <span class="badge warn">Pindah</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0004</td>
+                    <td data-label="Nama">Dewi Lestari</td>
+                    <td data-label="RT/RW">03/02</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

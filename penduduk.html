@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data penduduk - SIAK Desa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Buka menu"
+    />
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div><strong>SIAK Desa</strong><small>Kependudukan</small></div>
+        </div>
+        <nav>
+          <a href="index.html">Dashboard</a>
+          <a href="penduduk.html" class="active" aria-current="page"
+            >Data penduduk</a
+          >
+          <a href="keluarga.html">Data keluarga (KK)</a>
+          <a href="kelahiran.html">Kelahiran</a>
+          <a href="kematian.html">Kematian</a>
+          <a href="pindah.html">Pindah / datang</a>
+          <a href="wilayah.html">Data wilayah</a>
+          <a href="surat.html">Surat</a>
+          <a href="laporan.html">Laporan</a>
+          <a href="pengguna.html">Pengguna</a>
+        </nav>
+      </aside>
+      <label for="menu-toggle" class="overlay"></label>
+      <div class="main">
+        <header class="topbar">
+          <label for="menu-toggle" class="burger" aria-label="Menu"
+            ><span></span><span></span><span></span
+          ></label>
+          <input
+            type="search"
+            placeholder="Cari NIK atau nama"
+            aria-label="Cari penduduk"
+          />
+          <div class="user">
+            <span class="avatar">AD</span
+            ><span class="user-name">Admin desa</span>
+          </div>
+        </header>
+        <main class="content">
+          <h1>Data penduduk</h1>
+          <p class="page-sub">Daftar seluruh penduduk beserta statusnya.</p>
+          <section class="card">
+            <div class="card-head">
+              <h2>Daftar penduduk</h2>
+              <a href="penduduk.html#form-penduduk" class="btn"
+                >Tambah penduduk</a
+              >
+            </div>
+            <div class="toolbar">
+              <input
+                type="search"
+                placeholder="Cari NIK atau nama"
+                aria-label="Cari NIK atau nama"
+              /><select aria-label="Filter">
+                <option>Semua status</option>
+                <option>Aktif</option>
+                <option>Pindah</option>
+                <option>Meninggal</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>NIK</th>
+                    <th>Nama</th>
+                    <th>Jenis kelamin</th>
+                    <th>Tanggal lahir</th>
+                    <th>RT/RW</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0001</td>
+                    <td data-label="Nama">Budi Santoso</td>
+                    <td data-label="Jenis kelamin">Laki-laki</td>
+                    <td data-label="Tanggal lahir">12-03-1985</td>
+                    <td data-label="RT/RW">02/05</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0002</td>
+                    <td data-label="Nama">Siti Aminah</td>
+                    <td data-label="Jenis kelamin">Perempuan</td>
+                    <td data-label="Tanggal lahir">25-07-1988</td>
+                    <td data-label="RT/RW">02/05</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0003</td>
+                    <td data-label="Nama">Andi Pratama</td>
+                    <td data-label="Jenis kelamin">Laki-laki</td>
+                    <td data-label="Tanggal lahir">03-11-1990</td>
+                    <td data-label="RT/RW">01/03</td>
+                    <td data-label="Status">
+                      <span class="badge warn">Pindah</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0004</td>
+                    <td data-label="Nama">Dewi Lestari</td>
+                    <td data-label="Jenis kelamin">Perempuan</td>
+                    <td data-label="Tanggal lahir">17-01-1995</td>
+                    <td data-label="RT/RW">03/02</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0005</td>
+                    <td data-label="Nama">Rudi Hartono</td>
+                    <td data-label="Jenis kelamin">Laki-laki</td>
+                    <td data-label="Tanggal lahir">09-09-1960</td>
+                    <td data-label="RT/RW">04/01</td>
+                    <td data-label="Status">
+                      <span class="badge bad">Meninggal</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="NIK">3171xxxx0006</td>
+                    <td data-label="Nama">Rina Wulandari</td>
+                    <td data-label="Jenis kelamin">Perempuan</td>
+                    <td data-label="Tanggal lahir">30-05-2001</td>
+                    <td data-label="RT/RW">03/02</td>
+                    <td data-label="Status">
+                      <span class="badge ok">Aktif</span>
+                    </td>
+                    <td data-label="Aksi">
+                      <span class="actions"
+                        ><a href="#">Lihat</a><a href="#">Ubah</a
+                        ><a href="#" class="danger">Hapus</a></span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="pager">
+              <span>Menampilkan 6 dari 4.280 data</span>
+              <div class="pages">
+                <a href="#" class="current">1</a><a href="#">2</a
+                ><a href="#">3</a>
+              </div>
+            </div>
+          </section>
+          <section class="card" id="form-penduduk">
+            <h2>Tambah penduduk</h2>
+            <form class="form" action="#">
+              <label>NIK<input type="text" placeholder="16 digit NIK" /></label>
+              <label
+                >Nomor KK<input type="text" placeholder="16 digit nomor KK"
+              /></label>
+              <label
+                >Nama lengkap<input type="text" placeholder="Sesuai KTP"
+              /></label>
+              <label
+                >Tempat lahir<input type="text" placeholder="Jakarta"
+              /></label>
+              <label>Tanggal lahir<input type="date" placeholder="" /></label>
+              <label
+                >Jenis kelamin<select>
+                  <option>Laki-laki</option>
+                  <option>Perempuan</option>
+                </select></label
+              >
+              <label
+                >Agama<select>
+                  <option>Islam</option>
+                  <option>Kristen</option>
+                  <option>Katolik</option>
+                  <option>Hindu</option>
+                  <option>Buddha</option>
+                  <option>Konghucu</option>
+                </select></label
+              >
+              <label
+                >Status perkawinan<select>
+                  <option>Belum kawin</option>
+                  <option>Kawin</option>
+                  <option>Cerai hidup</option>
+                  <option>Cerai mati</option>
+                </select></label
+              >
+              <label
+                >Pekerjaan<input type="text" placeholder="Karyawan swasta"
+              /></label>
+              <label
+                >Alamat<input type="text" placeholder="Jalan, RT/RW, kelurahan"
+              /></label>
+              <div class="form-actions wide">
+                <button type="submit" class="btn">Simpan data</button
+                ><button type="reset" class="btn ghost">Batal</button>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
